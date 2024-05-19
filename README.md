@@ -1,6 +1,6 @@
 # Full stack application for user authentication
 
-## This project is created using Nest js for backend + React js for frontend + mongo DB as a database + Tailwind css for styling
+## This project is created using Nest js for backend + React js for frontend + mongo DB as a database + Tailwind css for styling + Typescript for strict type check + Jest for test 
 
 # Installation
 
