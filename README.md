@@ -14,19 +14,20 @@ Navigate to client `cd client` and install dependencies
 
 `npm i`
 
-Now we can run the project
-
-`npm run dev`
-
 Run test
 
 `npm run test`
 
-This opens frontend react application is localhost, something like `http://localhost:5173`
+Now we can run the project
+
+`npm run dev`
+
+
+This opens frontend react application in localhost, something like `http://localhost:5173`
 
 # Server setup
 
-Now we can run our backend server application which uses Nest js and mongo db
+Now we can setup our backend server application which uses Nest js and mongo db
 
 Navigate to server `cd server` and install dependencies
 
@@ -40,15 +41,25 @@ This should list mongodb status as running. If not check the installation guide 
 
 Add env variables at root folder inside server `.env`
 
-` DATABASE_PORT=27017
-DATABASE_NAME=nest_app_db
-NODE_ENV=LOCAL
-PROD=false
-EXPIRE_IN=5d
-JWT_SECRET=mysecretkey
-CLIENT_URI=http://localhost:5173 `
+`DATABASE_PORT=27017`
+
+`DATABASE_NAME=nest_app_db`
+
+`NODE_ENV=LOCAL`
+
+`PROD=false`
+
+`EXPIRE_IN=5d`
+
+`JWT_SECRET=mysecretkey`
+
+`CLIENT_URI=http://localhost:5173 `
 
 ensure CLIENT_URI same is the one that your react app runs locally
+
+Test the app using 
+
+`npm run test`
 
 Now you can run server app using 
 
@@ -56,7 +67,7 @@ Now you can run server app using
 
 Check postman if http methods sends and recieves proper response
 
-Now we can test our application 
+Now we can run our application 
 
 Register app with user name, email and password 
 
@@ -72,8 +83,5 @@ After successful login it navigates to welcome page.
 
 Logged out users cannot access welcome page and it shows not authorized to view this page. 
 
-Test the app using 
-
-`npm run test`
 
 
